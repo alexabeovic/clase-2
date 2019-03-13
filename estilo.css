@@ -11,13 +11,17 @@ https://developer.mozilla.org/es/docs/Web/CSS/At-rule#Grupos_de_Reglas_Condicion
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-@keyframes agua {
-  from {
+@keyframes panxita {
+  0% {
     background: #e57373;
   }
-  to {
-    background: rgba(255, 200, 231, 1.00);
+
+   50% {
+    background: #e57373;
   }
+  50% {
+   background: #4db6ac;
+ }
 }
 
 body {
@@ -28,7 +32,7 @@ body {
   line-height: 1.75;
   overflow-x: hidden;
   /* a continuación llamaré a la animación definada más arriba */
-  animation-name: agua;
+  animation-name: panxita;
   animation-duration: 5s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
@@ -61,8 +65,8 @@ pre{
 
 pre:hover{
   background:rgba(255,255,255,0.4);
-  transition: background ease 1s;
-  cursor:crosshair;
+  transition: background ease 0,3s;
+  cursor:help;
 }
 
 code{
